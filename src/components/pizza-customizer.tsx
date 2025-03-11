@@ -45,7 +45,7 @@ const PizzaCustomizer: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto bg-gray-100 font-sans text-gray-800">
+    <div className="max-w-lg  bg-gray-100 font-sans text-gray-800">
       <Header />
       <PizzaTitle title='14" Hand Tossed' description="Pizza Sauce, Cheese" />
 
