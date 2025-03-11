@@ -1,9 +1,8 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 import PizzaCustomizer from "./components/PizzaCustomizer";
 import CartPage from "./components/CartPage";
 
-// Define the CartItem interface (same as before)
 interface CartItem {
   id: string;
   name: string;
