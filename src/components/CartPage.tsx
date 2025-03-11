@@ -217,13 +217,17 @@ const CartPage: React.FC<CartPageProps> = ({initialCartItems}) => {
                     {item.size}, {item.crust}
                   </p>
 
+                  <p className="text-sm text-gray-600">Cheese: {item.cheeseAmount}</p>
+
                   {item.additionalSauces.length > 0 && (
                     <p className="text-sm text-gray-600">
                       Sauce: {item.sauceAmount}, {item.additionalSauces.join(", ")}
                     </p>
                   )}
 
-                  <p className="text-sm text-gray-600">Cheese: {item.cheeseAmount}</p>
+                  {item.toppings.length > 0 && (
+                    <p className="text-sm text-gray-600">Toppings: {item.toppings.join(", ")}</p>
+                  )}
 
                   <div className="flex items-center mt-2">
                     <button
